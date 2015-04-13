@@ -30,6 +30,7 @@
                 </configuration>
             </plugin>
         </plugins>
+		<finalName>multimodulo-web</finalName>
     </build>
 
     <dependencies>
@@ -42,7 +43,7 @@
             <artifactId>junit</artifactId>
         </dependency>
     </dependencies>
-  <build>
-    <finalName>multimodulo-web</finalName>
-  </build>
+
+    
+
 </project>
