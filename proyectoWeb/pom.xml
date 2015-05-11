@@ -16,7 +16,7 @@
 	<developers>
 		<developer>
 			<name>David Palomar</name>
-			<email>dpalomar@gmail.com</email>
+			<email>fakedeveloper@adamaconsulting.com</email>
 			<organization>Adama Consulting</organization>
 			<organizationUrl>http://www.adamaconsulting.es</organizationUrl>
 			<roles>
@@ -40,7 +40,7 @@
 		<!-- @OVERRIDE this property per each project -->
 		<repository.domain>github.com</repository.domain>
 		<!-- @OVERRIDE this property per each project -->
-		<repository.user>dpalomar</repository.user>
+		<repository.user>dicotraining</repository.user>
 		<!-- @OVERRIDE this property per each project -->
 		<repository.name>pruebas</repository.name>
 
@@ -58,7 +58,7 @@
 			For GitHub, gh-pages; for BitBucket, master] -->
 		<scm-publish.scmBranch>gh-pages</scm-publish.scmBranch>
 		<!-- @OVERRIDE [SCM location for documentation repository] -->
-		<scm-publish.pubScmUrl>scm:git:git@github.com:dpalomar/pruebas.git</scm-publish.pubScmUrl>
+		<scm-publish.pubScmUrl>scm:git:git@github.com:dicotraining/pruebas.git</scm-publish.pubScmUrl>
 		<scm-publish.siteDocOuputDirectory>${project.reporting.outputDirectory}</scm-publish.siteDocOuputDirectory>
 
 		<!-- ======================== -->
@@ -112,6 +112,7 @@
 		<plugin.wagon-ssh.version>2.2</plugin.wagon-ssh.version>
 		<plugin.wagon-webdav.version>1.0</plugin.wagon-webdav.version>
 		<plugin.versions.version>2.1</plugin.versions.version>
+		<plugin.war>2.4</plugin.war>
 
 		<!-- ============================= -->
 		<!-- CODE ANALYSIS PROPERTIES -->
@@ -559,7 +560,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-war-plugin</artifactId>
-				<version>2.4</version>
+				<version>${plugin.war}</version>
 				<configuration>
 					<!-- Esta etiqueta impide que falle al no tener un web.xml que ya no 
 						es obligatorio en servlet 3.0 -->
@@ -707,7 +708,7 @@
 							<displayFileRevDetailUrl>${changelog.fileUri}</displayFileRevDetailUrl>
 							<displayChangeSetDetailUrl>${changelog.revision.fileUri}
 							</displayChangeSetDetailUrl>
-							<headingDateFormat>MM-dd-yyyy</headingDateFormat>
+							<headingDateFormat>dd-MM-yyyy</headingDateFormat>
 							<outputEncoding>${project.reporting.outputEncoding}</outputEncoding>
 							<type>range</type>
 							<range>30</range>
@@ -720,7 +721,7 @@
 						<id>activty</id>
 						<configuration>
 							<displayFileDetailUrl>#</displayFileDetailUrl>
-							<headingDateFormat>MM-dd-yyyy</headingDateFormat>
+							<headingDateFormat>dd-MM-yyyy</headingDateFormat>
 							<outputEncoding>${project.reporting.outputEncoding}</outputEncoding>
 							<type>range</type>
 							<range>30</range>
@@ -806,6 +807,7 @@
 					<xrefLocation>${project.reporting.outputDirectory}/xref</xrefLocation>
 					<xrefTestLocation>${project.reporting.outputDirectory}/xref</xrefTestLocation>
 					<failOnViolation>false</failOnViolation>
+					<skipEmptyReport>false</skipEmptyReport>
 				</configuration>
 			</plugin>
 			<plugin>
