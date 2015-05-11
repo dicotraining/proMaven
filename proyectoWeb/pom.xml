@@ -713,9 +713,11 @@
 							<type>range</type>
 							<range>30</range>
 						</configuration>
-						<reports>
+					<!-- Excluded for privacy only
+					<reports>
 							<report>changelog</report>
 						</reports>
+						-->
 					</reportSet>
 					<reportSet>
 						<id>activty</id>
@@ -727,7 +729,7 @@
 							<range>30</range>
 						</configuration>
 						<reports>
-							<report>dev-activity</report>
+							<!--<report>dev-activity</report> -->
 							<report>file-activity</report>
 						</reports>
 					</reportSet>
