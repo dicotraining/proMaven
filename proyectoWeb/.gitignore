@@ -1,14 +1,10 @@
 # /
-/bin
-/target
-/WEB-INF
-/*.iml
-/*.ipr
-/*.iws
-/.idea
+bin/
+target/
+.idea/
 .gradle
-/build
-/m2e-wtp
+build/
+m2e-wtp/
 chromedriver.log
 
 # Package Files #

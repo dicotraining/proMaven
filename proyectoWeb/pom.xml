@@ -150,7 +150,7 @@
 		<!-- Cobertura is not active by default, look for project>cobertura plugin 
 			for more details -->
 		<enforcer.skip>false</enforcer.skip>
-		<findbugs.skip>false</findbugs.skip>
+		<findbugs.skip>true</findbugs.skip>
 		<javadocs.skip>false</javadocs.skip>
 		<pmd.skip>false</pmd.skip>
 		<versions.skip>false</versions.skip>
