@@ -34,4 +34,5 @@
 
 La localización de la documentación se encuentra en:
 
-[http://dpalomar.github.io/pruebas/index.html](http://dpalomar.github.io/pruebas/index.html)
+[http://dicotraining.github.io/proMaven/index.html
+](http://dicotraining.github.io/proMaven/index.html)

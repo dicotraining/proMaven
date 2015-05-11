@@ -42,7 +42,7 @@
 		<!-- @OVERRIDE this property per each project -->
 		<repository.user>dicotraining</repository.user>
 		<!-- @OVERRIDE this property per each project -->
-		<repository.name>pruebas</repository.name>
+		<repository.name>proMaven</repository.name>
 
 		<!-- ============================================= -->
 		<!-- BITBUCKET SPECIFIC DOCUMENTATION CHANGES -->
@@ -58,7 +58,7 @@
 			For GitHub, gh-pages; for BitBucket, master] -->
 		<scm-publish.scmBranch>gh-pages</scm-publish.scmBranch>
 		<!-- @OVERRIDE [SCM location for documentation repository] -->
-		<scm-publish.pubScmUrl>scm:git:git@github.com:dicotraining/pruebas.git</scm-publish.pubScmUrl>
+		<scm-publish.pubScmUrl>scm:git:git@github.com:${repository.user}/${repository.name}.git</scm-publish.pubScmUrl>
 		<scm-publish.siteDocOuputDirectory>${project.reporting.outputDirectory}</scm-publish.siteDocOuputDirectory>
 
 		<!-- ======================== -->
