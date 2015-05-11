@@ -55,4 +55,4 @@ This repo is for learning purpose only. It contains two git submodules with code
 - Dependency troubleshooting, issues and how to...
 
 
-You can see the final project that you can build here at: 
+You can see the final project that you can build here at: [http://dicotraining.github.io/proMaven/index.html](http://dicotraining.github.io/proMaven/index.html)
